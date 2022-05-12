@@ -1,0 +1,1 @@
+document.getElementById('form_p2').innerHTML = `<i class="fas fa-lock"></i> `+window.location.href;

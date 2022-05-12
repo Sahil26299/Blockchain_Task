@@ -1,0 +1,48 @@
+#cf1_col1{
+    padding: 275px 200px;
+}
+#cf1_col2{
+    background-color: black;
+    text-align: center;
+    padding: 100px 200px;
+}
+#cf1_col2_h2{
+    color: white;
+    font-weight: 300;
+}
+#form{
+    text-align:left;
+    margin-top: 50px   ;
+}
+#form_p1{
+    color: rgb(162, 162, 162);
+}
+#form_p2{
+    border: 1px solid white;
+    line-height: 30px;
+    padding: 0px 0px;
+    color: white;
+}
+.fa-lock{
+    background-color: powderblue;
+    color: green;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding-top: 7px;
+    margin-right: 5px;
+}
+#form_a1{
+    text-decoration: none;
+}
+#exampleInputEmail1, #exampleInputPassword1{
+    background-color: transparent;
+    height: 50px;
+    color: white;
+}
+#exampleInputEmail1::placeholder, #exampleInputPassword1::placeholder{
+    color: white;
+}
+#input_div{
+    margin-top: 30px;
+}

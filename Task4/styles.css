@@ -1,10 +1,13 @@
+#cf1{
+    height: 100%;
+}
 #cf1_col1{
     padding: 275px 200px;
 }
 #cf1_col2{
     background-color: black;
     text-align: center;
-    padding: 100px 200px;
+    padding: 100px 250px;
 }
 #cf1_col2_h2{
     color: white;
@@ -21,7 +24,7 @@
     border: 1px solid white;
     line-height: 30px;
     padding: 0px 0px;
-    color: white;
+    color: rgb(162, 162, 162);
 }
 .fa-lock{
     background-color: powderblue;
@@ -35,14 +38,86 @@
 #form_a1{
     text-decoration: none;
 }
-#exampleInputEmail1, #exampleInputPassword1{
+
+#exampleInputEmail1,#exampleInputUsername1, #exampleInputPassword1, #exampleInputConfirmPassword1, #exampleInputName1, #exampleInputPhNumber, #exampleInputOTP{
     background-color: transparent;
     height: 50px;
     color: white;
 }
-#exampleInputEmail1::placeholder, #exampleInputPassword1::placeholder{
+#exampleInputEmail1::placeholder, #exampleInputUsername1::placeholder, #exampleInputPassword1::placeholder, #exampleInputConfirmPassword1::placeholder, #exampleInputName1::placeholder, #exampleInputPhNumber::placeholder, #exampleInputOTP::placeholder{
     color: white;
 }
 #input_div{
     margin-top: 30px;
+}
+#checkbox_label{
+    color: rgb(113, 113, 113);
+    font-size: 15px;
+}
+#checkbox_a{
+    text-decoration: none;
+}
+#submit{
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    background-color: rgb(93, 187, 237);
+    font-size: 15px;
+    height: 50px;
+}
+#sign_in{
+    color: rgb(113, 113, 113);
+    font-weight: 700;
+}
+#have_account{
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+#eye_icon, #eye_icon2{
+    background-color: gray;
+    color: white;
+    padding: 5px;
+    font-size: 12px;
+    position: absolute;
+    top: 15px;
+    left: 440px;
+}
+#div_password, #after_OTP{
+    position: relative;
+}
+#forgotten_pass{
+    text-decoration: none;
+    color: rgb(113, 113, 113);
+    font-weight: 700;
+    text-align: right;
+}
+#exampleInputPassword1, #exampleInputConfirmPassword1{
+    padding-right: 45px;
+}
+#after_OTP{
+    display: none;
+}
+#exampleInputOTP{
+    margin-top: 25px;
+}
+#for_OTP{
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    background-color: rgb(93, 187, 237);
+    font-size: 15px;
+    height: 50px;
+}
+#after_OTP_validate1, #after_OTP_validate2, #submit_after_newpass{
+    display: none;
+    margin-top: 25px;
+}
+#submit_after_newpass{
+    width: 100%;
+    border-radius: 0px;
+    border: none;
+    background-color: rgb(93, 187, 237);
+    font-size: 15px;
+    height: 50px;
 }

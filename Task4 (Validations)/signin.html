@@ -11,18 +11,18 @@
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/styles.css">
-    <title>Document</title>
+    <title>MyValidations: Sign in</title>
 </head>
 
 <body class="bg-dark">
     <div class="container-fluid" id="cf1">
         <div class="row" id="cf1_row">
             <div class="col-lg-5" id="cf1_col1">
-                <img src="https://tool.develocity.finance/images/logo/logo-shape.svg" width="300px">
+                <img src="https://tool.develocity.finance/images/logo/logo-shape.svg" id="logo">
             </div>
             <div class="col-lg-7" id="cf1_col2">
                 <h2 id="cf1_col2_h2">Sign In</h2>
-                <form action="/action_page.php" method="get" id="form" onsubmit="return isFormValid()">
+                <form method="post" id="form">
                     <p id="form_p1">Always Make Sure That You Are Visiting The Current URL</p>
                     <a role="link" id="form_a1" aria-disabled="true">
                         <p id="form_p2"></p>
@@ -34,18 +34,22 @@
                     </div>
                     <div class="mb-3" id="div_password">
                         <input type="password" class="form-control" id="exampleInputPassword1"
-                            onkeyup="displayPasswordError()" aria-describedby="passwordHelp"
+                            onkeyup="displaySigninPasswordError()" aria-describedby="passwordHelp"
                             placeholder="Enter Your Password">
                         <i class="fas fa-eye" id="eye_icon" onclick="showHidePassword()"></i>
-                        <div id="passwordHelp" class="form-text" style="display: none; color: tomato;">Please enter your
-                            password</div>
+                        <div id="passwordHelp" class="form-text" style="display: none;">Please enter your password</div>
                     </div>
-                    <div class="mb-3 form-check">
-                        <a href="/forgotPassword.html" id="forgotten_pass"><p>Forgotten Password?</p></a>
-                    </div>
-                    <button type="submit" id="submit" class="btn btn-primary">LOGIN</button>
-                    <p id="have_account">Do you have an account? <a href="/signUp.html" id="sign_in">SIGN UP</a></p>
+                    <button type="button" id="submit" onclick="isLoginValid()" class="btn btn-primary">LOGIN</button>
                 </form>
+                <div id="snackbar">Signed In Succesfully!</div>
+                <div class="mb-3 form-check">
+                    <a href="/forgotPassword.html" id="forgotten_pass">
+                        <p>Forgotten Password?</p>
+                    </a>
+                </div>
+                
+                <p id="have_account">Do you have an account? <a href="/signUp.html" id="sign_in">SIGN UP</a></p>
+
             </div>
         </div>
     </div>

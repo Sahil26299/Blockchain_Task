@@ -39,11 +39,15 @@
     text-decoration: none;
 }
 
-#exampleInputEmail1,#exampleInputUsername1, #exampleInputPassword1, #exampleInputConfirmPassword1, #exampleInputName1, #exampleInputPhNumber, #exampleInputOTP{
+#exampleInputEmail1,#exampleInputUsername1, #exampleInputPassword1, #exampleInputConfirmPassword1, #exampleInputName1, #exampleInputPhNumber, #exampleInputOTP, #exampleInputBirthDate1{
     background-color: transparent;
     height: 50px;
     color: white;
 }
+#exampleInputBirthDate1::-webkit-calendar-picker-indicator{
+    background-color: white;   
+}
+
 #exampleInputEmail1::placeholder, #exampleInputUsername1::placeholder, #exampleInputPassword1::placeholder, #exampleInputConfirmPassword1::placeholder, #exampleInputName1::placeholder, #exampleInputPhNumber::placeholder, #exampleInputOTP::placeholder{
     color: white;
 }
@@ -59,8 +63,10 @@
 }
 #submit{
     width: 100%;
-    border-radius: 0px;
+    border-radius: 5px;
     border: none;
+    box-shadow: none;
+    outline: none;
     background-color: rgb(93, 187, 237);
     font-size: 15px;
     height: 50px;
@@ -121,3 +127,66 @@
     font-size: 15px;
     height: 50px;
 }
+#after_OTP_validate1, #after_OTP_validate2{
+    position: relative;
+}
+@media screen and (max-width:450px){
+    #cf1_col1 {
+        padding: 30px 175px;
+    }
+    #logo{
+        width: 100px;
+    }
+    #cf1_col2 {
+        padding: 100px 45px;
+    }
+    #eye_icon{
+        top: 15px;
+        left: 325px;
+    }
+}
+#logo{
+    width: 300px;
+}
+#snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #d1e7dd;
+    color: green;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    border-left:5px solid green;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  #snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
